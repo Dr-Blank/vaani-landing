@@ -1,7 +1,15 @@
 {
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#172E49",
-    "titleBar.activeBackground": "#214166",
-    "titleBar.activeForeground": "#F8FAFD"
-  }
+  "css.customData": ["./vscode.tailwind.json"],
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "yaml.schemas": {
+    "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
+  },
+  "eslint.useFlatConfig": true
 }
