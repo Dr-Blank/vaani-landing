@@ -1,16 +1,32 @@
 ---
-
+// You can write JavaScript/TypeScript here if needed for build-time logic
+// For a simple landing page, this might be empty.
+import BaseLayout from "../layouts/BaseLayout.astro"; // Example: Using a layout
+const pageTitle = "Vaani Audiobook App";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title={pageTitle}>
+  <h1>Welcome to {pageTitle}!</h1>
+  <p>Listen to your audiobooks seamlessly.</p>
+
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Feature 1...</li>
+      <li>Feature 2...</li>
+    </ul>
+  </section>
+
+  <section id="download">
+    <h2>Download</h2>
+    <a href="#">Download for Android</a>
+    <a href="#">Download for iOS (Coming Soon!)</a>
+  </section>
+
+  <section id="github">
+    <h2>Open Source</h2>
+    <a href="https://github.com/Dr-Blank/Vaani" target="_blank" rel="noopener noreferrer"
+      >View on GitHub</a
+    >
+  </section>
+</BaseLayout>
