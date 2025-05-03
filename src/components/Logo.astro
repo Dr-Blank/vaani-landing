@@ -1,9 +1,18 @@
 ---
-import { SITE } from 'astrowind:config';
+import { SITE } from "astrowind:config";
+import favIconSvg from "~/assets/images/vaani_logo.svg";
 ---
 
+<!-- image is already white so make it black in light mode by using filters -->
+<img
+  src={favIconSvg.src}
+  alt={SITE?.name}
+  width="32"
+  height="32"
+  class="w-8 h-8 md:w-6 md:h-6 mr-0 rtl:mr-0 rtl:ml-0 invert dark:invert-0"
+/>
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+  class="self-center ml-0 rtl:ml-0 rtl:mr-0 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
 >
-  🚀 {SITE?.name}
+  {SITE?.name}
 </span>

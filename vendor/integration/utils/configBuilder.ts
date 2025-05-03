@@ -19,6 +19,7 @@ export interface SiteConfig {
   base?: string;
   trailingSlash?: boolean;
   googleSiteVerificationId?: string;
+  github?: string;
 }
 export interface MetaDataConfig extends Omit<MetaData, 'title'> {
   title?: {
